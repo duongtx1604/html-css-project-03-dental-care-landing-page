@@ -650,3 +650,126 @@ a {
 .news-box__card-item:hover .news-box__card-item--btn-learn-more {
     color: #2e80ce;
 }
+/* Appointment */
+
+.appointment-box {
+    background: #f6fbff;
+    padding: 100px 179px;
+    text-align: center;
+    margin-bottom: 170px;
+}
+
+.appointment-box__heading {
+    position: relative;
+}
+.appointment-box__heading::before {
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    content: "";
+    display: inline-block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+}
+
+.appointment-box__desc {
+    max-width: 617px;
+    padding: 38px 0;
+    margin: auto;
+}
+
+.appointment-box__btn-action {
+    width: 205px;
+    padding: 15px 41px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.appointment-box__btn-action:hover {
+    color: #fff;
+    background: #2e80ce;
+    opacity: 90%;
+}
+/* footer */
+
+.footer {
+    background: #10375c;
+}
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 28px;
+    border-bottom: 1px solid #406181;
+}
+
+.column__mini--sub-title {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    padding-top: 28px;
+}
+.column__mini--link {
+    color: #a9b3bb;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+    padding-top: 14px;
+    display: inline-block;
+}
+.column__mini:first-child .column__mini--sub-title {
+    padding-top: 0;
+}
+
+.column__mini li:first-child a,
+.logo__desc,
+.social {
+    padding-top: 20px;
+}
+
+.logo__desc {
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+    width: 336px;
+}
+
+.subscribe {
+    width: 273px;
+}
+
+#email {
+    width: 212px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background: transparent;
+    margin-top: 10px;
+}
+
+.footer__submit {
+    width: 108px;
+    height: 46px;
+    border-radius: 4px;
+    font-family: Open Sans;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    padding: 28px 0 42px;
+}
