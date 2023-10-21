@@ -174,7 +174,6 @@ a {
     font-weight: 300;
     margin-top: 22px;
     line-height: 1.66;
-    text-align: center;
 }
 
 .header-body__text--actions {
@@ -333,16 +332,16 @@ a {
 
 .work__list {
     padding: 86px 0 100px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 3;
+    grid-auto-flow: column;
+    gap: 30px;
 }
 .work__list--card {
-    width: 338px;
-    flex-shrink: 0;
     border: 16px solid #eaf6ff;
     border-radius: 4px;
     background: #fff;
-    padding: 43px;
-    margin-left: 30px;
+    padding: 43px 0 43px 42px;
     transition: 0.3s;
 }
 
@@ -350,7 +349,7 @@ a {
     margin-left: 0;
 }
 .work__list--card:hover {
-    transform: translate(0, -20px);
+    transform: translate(0, -16px);
     border: 16px solid #2e80ce;
 }
 
@@ -376,7 +375,7 @@ a {
 
 .work__list--desc,
 .work__list--btn-learn-more {
-    font-size: 1.6;
+    font-size: 1.6rem;
     line-height: 1.75; /* 175% */
     margin-top: 28px;
 }
@@ -384,4 +383,270 @@ a {
 .work__list--btn-learn-more {
     display: inline-block;
     margin-top: 18px;
+}
+
+/* Features */
+.features {
+    margin: 170px 0 80px;
+}
+
+.features-box {
+    display: flex;
+}
+.features-box__images {
+    position: relative;
+}
+.features-box__images--item-1,
+.features-box__images--item-2 {
+    border-radius: 6px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+    object-fit: cover;
+}
+
+.features-box__images--item-1 {
+    width: 512px;
+    height: 370px;
+}
+.features-box__images--item-2 {
+    width: 332px;
+    height: 370px;
+    z-index: 1;
+    position: absolute;
+    bottom: -121px;
+    right: -58px;
+}
+.features-box__info {
+    padding: 82px 0 0 188px;
+}
+
+.features-box__info--desc {
+    margin-top: 18px;
+}
+
+.features-box__info--btn-learn-more {
+    height: 60px;
+    min-width: 205px;
+    margin-top: 38px;
+}
+.features-box__info--btn-learn-more:hover {
+    color: #fff;
+    background: #2e80ce;
+    opacity: 90%;
+}
+
+/* Members */
+
+.members {
+    padding: 170px 0;
+    position: relative;
+}
+
+.members-box__heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.members-box__heading--btn-meet {
+    height: 60px;
+    width: 205px;
+    margin-top: 38px;
+}
+.members-box__heading--btn-meet:hover {
+    color: #fff;
+    background: #2e80ce;
+    opacity: 90%;
+}
+
+.members-box__cards {
+    padding-top: 250px;
+    display: grid;
+    grid-template-columns: 4;
+    grid-auto-flow: column;
+    gap: 30px;
+    text-align: center;
+}
+.members-box__card-item--images {
+    border-radius: 6px;
+    background: #eaf6ff;
+    width: 270px;
+    height: 318px;
+    overflow: hidden;
+}
+
+.members-box__card-item--image {
+    width: 262px;
+    height: 290px;
+    object-fit: cover;
+    margin-top: 28px;
+    object-position: 50% 0%;
+    transition: 0.4s;
+}
+.members-box__card-item--image:hover {
+    transform: scale(1.15);
+}
+.members-box__card-item--name {
+    color: var(--bg--color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    margin-top: 12px;
+}
+
+.members-box__card-item--desc {
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85; /* 185.714% */
+}
+.chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.chevron__item {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    outline: none;
+    color: #575f66;
+    background: #fff;
+    transition: 0.25s;
+    margin-top: 38px;
+}
+.chevron__item:hover {
+    background-color: #2e80ce;
+    color: #fff;
+    border: none;
+}
+
+/* install */
+.install-box {
+    position: relative;
+}
+
+.install-box__body {
+    margin-top: 95px;
+    border-radius: 4px;
+    background: #2e80ce;
+}
+
+.install-box__body-info {
+    padding: 76px 0 75px 514px;
+}
+
+.install-box__body-info--heading {
+    color: #fff;
+    line-height: 1.2; /* 120% */
+    max-width: 586px;
+}
+.install-box__body-info--desc {
+    max-width: 586px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66; /* 166.667% */
+    margin: 18px 0 38px;
+}
+.install-box__phone {
+    position: absolute;
+    width: 284px;
+    height: 522px;
+    z-index: 1;
+    object-fit: cover;
+    left: 70px;
+    bottom: 0;
+}
+
+.install-box__body-info--app-store {
+    padding-left: 28px;
+}
+
+/* news  box */
+.news-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 170px 0;
+}
+
+.news-box__info {
+    padding-top: 68px;
+}
+.news-box__info--url {
+    display: inline-block;
+    padding: 28px 0;
+    color: #10375c;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.55; /* 155.556% */
+    text-decoration-line: underline;
+}
+.news-box__info--chevron {
+    display: block;
+}
+.news-box__info--chevron-item {
+    margin-top: 0;
+    margin-left: 18px;
+}
+.news-box__info--chevron-item:first-child {
+    margin-left: 0;
+}
+.news-box__cards {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.news-box__card-item {
+    width: 270px;
+    height: 375px;
+    border-radius: 12px;
+    border: 1px solid #e8ebee;
+    background: #fff;
+}
+.news-box__card-item--images {
+    border-radius: 12px 12px 0px 0px;
+    overflow: hidden;
+}
+.news-box__card-item--image {
+    width: 270px;
+    height: 172px;
+    flex-shrink: 0;
+    border-radius: 12px 12px 0px 0px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.news-box__card-item--image:hover {
+    transform: scale(1.15);
+}
+.news-box__card-item--row {
+    padding: 18px 24px 21px 22px;
+}
+
+.news-box__card-item--name {
+    color: var(--bg--color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.62; /* 162.5% */
+}
+.news-box__card-item--desc {
+    margin: 10px 0 12px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71; /* 171.429% */
+}
+
+.news-box__card-item--btn-learn-more {
+    color: #10375c;
+    font-size: 1.4;
+    font-weight: 400;
+}
+.news-box__card-item:hover .news-box__card-item--btn-learn-more {
+    color: #2e80ce;
 }
